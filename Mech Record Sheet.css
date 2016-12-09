@@ -1,5 +1,7 @@
 h4 {
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 table, th, td {
