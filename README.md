@@ -7,5 +7,7 @@ Need to do:
 - Testing (mech sheet)
 
 Recent Updates:
+- Began custom Solaris VII League sheet.
+- Added "Design Quirks" section.
 - Mostly cosmetic changes to armor/crit table for mech sheet (mech sheet)
 - Created .css file for mech sheet (mech sheet)
