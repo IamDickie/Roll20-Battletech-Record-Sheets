@@ -1,0 +1,332 @@
+<!-- Battlemech standalone code -->
+
+<!-- WARRIOR DATA -->
+<h4>Warrior Data</h4>
+        
+        <table class="warriordata">
+            <tr>
+                <th>Pilot</th>
+                <td><input type="text" name="attr_warriorname" /></td>
+                <th>Player</th>
+                <td><input type="text" name="attr_playername" /></td>
+            </tr>
+            <tr>
+                <th>Piloting</th>
+                <td><input type="number" name="attr_warriorpilotskill" value=""/></td>
+                <th>Gunnery</th>
+                <td><input type="number" name="attr_warriorgunneryskill" value=""/></td>
+            </tr>
+            <tr>
+                <th>Hits Taken</th>
+                <td><input type="number" name="attr_warriorhtk" /> / 6</td>
+                <th>Experience</th>
+                <td><input type="number" name="attr_warriorxp" value="0"/></td>
+            </tr>
+            </table>
+        
+<!-- MECH DATA -->
+<h4>'Mech Data</h4>
+            
+        <table class="mechdata">
+            <tr>
+                <th>Heat Sinks</th>
+                <td><input type="number" name="attr_MDHStotal" value="10"/></td>
+                <th>Heat Sink Type</th>
+                <td><input type="text" placeholder="Single" name="attr_MDHStype" value="" /></td>
+            </tr>
+            <tr>
+                <th>Tech Base</th>
+                <td><input type="text" placeholder="Inner Sphere" name="attr_MDtechbase" value="" /></td>
+            </tr>
+            <tr>
+                <th>Tonnage</th>
+                <td><input type="number" name="attr_MDweight" value="0"/></td>
+                <th>BV</th>
+                <td><input type="number" name="attr_MDBV" value="0" /></td>
+            </tr>
+            <tr>
+                <th>Walk</th>
+                <td><input type="number" name="attr_MDwalk" value="0" /></td>
+                <th>Run</th>
+                <td><input type="number" name="attr_MDrun" value="0" /></td>
+                <th>Jump</th>
+                <td><input type="number" name="attr_MDjump" value="0" /></td>
+            </tr>
+        </table>
+
+<!-- DESIGN QUIRKS -->
+<h4>Design Quirks</h4>
+
+        <table class="designquirks">
+            <tr>
+                <th>Positive Deisgn Quirks</th>
+                <th>Negative Design Quirks</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_PDQ" value="" /></td>
+                <td><input type="text" name="attr_NDQ" value="" /></td>
+            </tr>
+        </table>
+        
+        <fieldset class="repeating-quirks">
+            <tr>
+                <td><input type="text" name="attr_PDQ1" value="" /></td>
+                <td><input type="text" name="attr_NDQ1" value="" /></td>
+            </tr>
+        </fieldset>
+
+<!-- WEAPONS AND EQUIPMENT CHART -->
+<h4>Weapons and Equipment</h4>
+
+        <table class="MEweapons">
+            <tr>
+                <th>Type</th>
+                <th>Loc</th>
+                <th>Ht</th>
+                <th>Dam</th>
+                <th>Min</th>
+                <th>Sht</th>
+                <th>Med</th>
+                <th>Lng</th>
+                <th>Cur Ammo</th>
+                <th>Max Ammo</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="attr_MEtype" /></td>
+                <td><input type="text" name="attr_MEloc" /></td>
+                <td><input type="Number" name="attr_MEht" /></td>
+                <td><input type="Number" name="attr_MEdam" /></td>
+                <td><input type="Number" name="attr_MEmin" /></td>
+                <td><input type="Number" name="attr_MEsht" /></td>
+                <td><input type="Number" name="attr_MEmed" /></td>
+                <td><input type="Number" name="attr_MElng" /></td>
+                <td><input type="Number" name="attr_MEcurammo" /></td>
+                <td><input type="Number" name="attr_MEmaxammo" /></td>
+            </tr>
+        </table>
+
+        <fieldset class="repeating-mechweapons">
+            <tr>
+                <td><input type="text" name="attr_MEtype1" /></td>
+                <td><input type="text" name="attr_MEloc1" /></td>
+                <td><input type="Number" name="attr_MEht1" /></td>
+                <td><input type="Number" name="attr_MEdam1" /></td>
+                <td><input type="Number" name="attr_MEmin1" /></td>
+                <td><input type="Number" name="attr_MEsht1" /></td>
+                <td><input type="Number" name="attr_MEmed1" /></td>
+                <td><input type="Number" name="attr_MElng1" /></td>
+                <td><input type="Number" name="attr_MEcurammo1" /></td>
+                <td><input type="Number" name="attr_MEmaxammo1" /></td>
+            </tr>
+        </fieldset>
+
+<!-- ARMOR RATINGS AND CRITICAL CHART -->
+    <h4>Armor and Critical Chart</h4>
+        
+        <table class="mech-armor-crit">
+            <tr>
+                <th>Left Arm</th>
+                <th>Head</th>
+                <th>Right Arm</th>
+            </tr>
+            <tr>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MLAAC"/>/
+                    <input type="Number" value="0" name="attr_MLAAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MLAIC"/>/
+                    <input type="Number" value="0" name="attr_MLAIM"/>
+                </td>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MHAC"/>/
+                    <input type="Number" value="0" name="attr_MHAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MHIC"/>/
+                    <input type="Number" value="0" name="attr_MHIM"/>
+                </td>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MRAAC"/>/
+                    <input type="Number" value="0" name="attr_MRAAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MRAIC"/>/
+                    <input type="Number" value="0" name="attr_MRAIM"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 <input type="text" placeholder="Shoulder" value="" name="attr_MLA11"/><!-- HOLDING THIS JUST IN CASE <input type="checkbox" class= "destroyed-crit-slot" name="attr_MLAD" value="" /> --><br>
+                    2 <input type="text" placeholder="Upper Arm Actuator" value="" name="attr_MLA12"/><br>
+                    3 <input type="text" placeholder="Lower Arm Actuator" value="" name="attr_MLA13"/><br>
+                    4 <input type="text" placeholder="Hand Actuator" value="" name="attr_MLA14"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MLA15"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MLA16"/><br>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Life Support" value="" name="attr_MH11"/><br>
+                    2 <input type="text" placeholder="Sensors" value="" name="attr_MH12"/><br>
+                    3 <input type="text" placeholder="Cockpit" value="" name="attr_MH13"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MH14"/><br>
+                    5 <input type="text" placeholder="Sensors" value="" name="attr_MH15"/><br>
+                    6 <input type="text" placeholder="Life Support" value="" name="attr_MH16"/><br>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Shoulder" value="" name="attr_MRA11"/><br>
+                    2 <input type="text" placeholder="Upper Arm Actuator" value="" name="attr_MRA12"/><br>
+                    3 <input type="text" placeholder="Lower Arm Actuator" value="" name="attr_MRA13"/><br>
+                    4 <input type="text" placeholder="Hand Actuator" value="" name="attr_MRA14"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MRA15"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MRA16"/><br>
+                </td>
+                <tr>
+                <td>
+                    1 <input type="text" placeholder="Roll Again" value="" name="attr_MLA21"/><br>
+                    2 <input type="text" placeholder="Roll Again" value="" name="attr_MLA22"/><br>
+                    3 <input type="text" placeholder="Roll Again" value="" name="attr_MLA23"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MLA24"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MLA25"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MLA26"/><br>
+                </td>
+                <td>
+                    Current Heat: <input type="number" value="0" name="attr_mechcurrentheat" />
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Roll Again" value="" name="attr_MRA21"/><br>
+                    2 <input type="text" placeholder="Roll Again" value="" name="attr_MRA22"/><br>
+                    3 <input type="text" placeholder="Roll Again" value="" name="attr_MRA23"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MRA24"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MRA25"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MRA26"/><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Left Torso</th>
+                <th>Center Torso</th>
+                <th>Right Torso</th>
+            </tr>
+            <tr>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MLTAC"/>/
+                    <input type="Number" value="0" name="attr_MLTAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MLTIC"/>/
+                    <input type="Number" value="0" name="attr_MLTIM"/>
+                </td>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MCTAC"/>/
+                    <input type="Number" value="0" name="attr_MCTAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MCTIC"/>/
+                    <input type="Number" value="0" name="attr_MCTIM"/>
+                </td>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MRTAC"/>/
+                    <input type="Number" value="0" name="attr_MRTAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MRTIC"/>/
+                    <input type="Number" value="0" name="attr_MRTIM"/>
+                </td>
+            </tr>
+            <tr>
+                <td>LT Rear Armor <input type="Number" value="0" name="attr_MRLTAC"/>/
+                <input type="Number" value="0" name="attr_MRLTAM"/><br>
+                </td>
+                <td>CT Rear Armor <input type="Number" value="0" name="attr_MRCTAC"/>/
+                <input type="Number" value="0" name="attr_MRCTAM"/><br>
+                </td>
+                <td>RT Rear Armor <input type="Number" value="0" name="attr_MRRTAC"/>/
+                <input type="Number" value="0" name="attr_MRRTAM"/><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 <input type="text" placeholder="Roll Again" value="" name="attr_MLT11"/><br>
+                    2 <input type="text" placeholder="Roll Again" value="" name="attr_MLT12"/><br>
+                    3 <input type="text" placeholder="Roll Again" value="" name="attr_MLT13"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MLT14"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MLT15"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MLT16"/><br>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Engine" value="" name="attr_MCT11"/><br>
+                    2 <input type="text" placeholder="Engine" value="" name="attr_MCT12"/><br>
+                    3 <input type="text" placeholder="Engine" value="" name="attr_MCT13"/><br>
+                    4 <input type="text" placeholder="Gyro" value="" name="attr_MCT14"/><br>
+                    5 <input type="text" placeholder="Gyro" value="" name="attr_MCT15"/><br>
+                    6 <input type="text" placeholder="Gyro" value="" name="attr_MCT16"/><br>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Roll Again" value="" name="attr_MRT11"/><br>
+                    2 <input type="text" placeholder="Roll Again" value="" name="attr_MRT12"/><br>
+                    3 <input type="text" placeholder="Roll Again" value="" name="attr_MRT13"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MRT14"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MRT15"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MRT16"/><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 <input type="text" placeholder="Roll Again" value="" name="attr_MLT21"/><br>
+                    2 <input type="text" placeholder="Roll Again" value="" name="attr_MLT22"/><br>
+                    3 <input type="text" placeholder="Roll Again" value="" name="attr_MLT23"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MLT24"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MLT25"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MLT26"/><br>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Gyro" value="" name="attr_MCT21"/><br>
+                    2 <input type="text" placeholder="Engine" value="" name="attr_MCT22"/><br>
+                    3 <input type="text" placeholder="Engine" value="" name="attr_MCT23"/><br>
+                    4 <input type="text" placeholder="Engine" value="" name="attr_MCT24"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MCT25"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MCT26"/><br>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Roll Again" value="" name="attr_MRT21"/><br>
+                    2 <input type="text" placeholder="Roll Again" value="" name="attr_MRT22"/><br>
+                    3 <input type="text" placeholder="Roll Again" value="" name="attr_MRT23"/><br>
+                    4 <input type="text" placeholder="Roll Again" value="" name="attr_MRT24"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MRT25"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MRT26"/><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Left Leg</th>
+                <th></th>
+                <th>Right Leg</th>
+            </tr>
+            <tr>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MLLAC"/>/
+                    <input type="Number" value="0" name="attr_MLLAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MLLIC"/>/
+                    <input type="Number" value="0" name="attr_MLLIM"/>
+                </td>
+                <td></td>
+                <td>
+                    Armor <input type="Number" value="0" name="attr_MRLAC"/>/
+                    <input type="Number" value="0" name="attr_MRLAM"/><br>
+                    IS <input type="Number" value="0" name="attr_MRLIC"/>/
+                    <input type="Number" value="0" name="attr_MRLIM"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 <input type="text" placeholder="Hip" value="" name="attr_MLL11"/><br>
+                    2 <input type="text" placeholder="Upper Leg Actuator" value="" name="attr_MLL12"/><br>
+                    3 <input type="text" placeholder="Lower Leg Actuator" value="" name="attr_MLL13"/><br>
+                    4 <input type="text" placeholder="Foot Actuator" value="" name="attr_MLL14"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MLL15"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MLL16"/><br>
+                </td>
+                <td>
+                    Engine Hits <input type="Number" value="0" name="attr_Menginehits"/> / 3<br>
+                    Gyro Hits <input type="Number" value="0" name="attr_Mgyrohits"/> / 2<br>
+                    Life sup Hits <input type="Number" value="0" name="attr_MLShits"/> / 2<br>
+                    Sensor Hits <input type="Number" value="0" name="attr_Msensorhits"/> / 1<br>
+                    Heat Sinks <input type="Number" value="0" name="attr_MHSChits"/> / <input type="Number" value="0" name="attr_MHSMhits"/>
+                </td>
+                <td>
+                    1 <input type="text" placeholder="Hip" value="" name="attr_MRL11"/><br>
+                    2 <input type="text" placeholder="Upper Leg Actuator" value="" name="attr_MRL12"/><br>
+                    3 <input type="text" placeholder="Lower Leg Actuator" value="" name="attr_MRL13"/><br>
+                    4 <input type="text" placeholder="Foot Actuator" value="" name="attr_MRL14"/><br>
+                    5 <input type="text" placeholder="Roll Again" value="" name="attr_MRL15"/><br>
+                    6 <input type="text" placeholder="Roll Again" value="" name="attr_MRL16"/><br>
+                </td>
+            </tr>
+            
+        </table>
