@@ -1,0 +1,25 @@
+h4 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+/*Page buttons*/
+div[class^="sheet-section"] { 	
+	display: none;
+}
+
+input.sheet-tab1:checked ~ div.sheet-section-gladiator,
+input.sheet-tab2:checked ~ div.sheet-section-economics,
+input.sheet-tab3:checked ~ div.sheet-section-mecha,
+input.sheet-tab4:checked ~ div.sheet-section-mechb,
+input.sheet-tab5:checked ~ div.sheet-section-mechc,
+input.sheet-tab6:checked ~ div.sheet-section-mechd,
+input.sheet-tab7:checked ~ div.sheet-section-meche{
+	display: block;
+    border: 1px solid #a8a8a8;    
+}
